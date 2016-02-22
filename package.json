@@ -1,0 +1,21 @@
+{
+  "name": "nic-id",
+  "version": "0.0.1",
+  "description": "Class definition representing a Nicaraguan ID document which tries to comply with Ley 152.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nicaragua",
+    "Nicaraguan",
+    "Id",
+    "Cedula"
+  ],
+  "author": "Christopher Ramírez",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christopher-ramirez/nic-id"
+  }
+}
