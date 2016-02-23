@@ -4,7 +4,7 @@
   "description": "Class definition representing a Nicaraguan ID document which tries to comply with Ley 152.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-register",
     "help": "babel -h",
     "build": "babel index.js -d lib",
     "postinstall": "npm run build"
@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",
-    "babel-plugin-transform-es2015-block-scoping": "^6.5.0",
-    "babel-plugin-transform-es2015-classes": "^6.5.2",
-    "babel-preset-es2015": "^6.5.0"
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "mocha": "^2.4.5"
   }
 }
