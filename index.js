@@ -7,7 +7,7 @@
 
 'use strict'
 
-const validIdNumberRegExp = /^(\d{3})[ -]?(\d{6})[ -]?(\d{4}\S{1})$/
+const validIdNumberRegExp = /^(\d{3})[ -]?(\d{6})[ -]?(\d{4}[a-zA-Z]{1})$/
 
 class NicaraguanId {
     constructor(number) {
