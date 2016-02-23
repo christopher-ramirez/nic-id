@@ -1,5 +1,5 @@
 import assert from 'assert';
-import NicaraguanId from '../lib';
+import NicaraguanId from '../index.js';
 
 describe('NicaraguanId', () => {
     it('Should accepts a valid id number', () => {
