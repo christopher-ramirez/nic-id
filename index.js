@@ -33,17 +33,14 @@ class NicaraguanId {
         this.cityId = cityId
         this.birthDigits = birthDigits
         this.consecutive = consecutive
-
-        this.parseBirthDate(birthDigits)
+        this.birthDate = dateFromSixIntDigits(this.birthDigits)
     }
+}
 
-    parseBirthDate(birthDigits) {
-        const dateFormat = /^(\d{2})(\d{2})(\d{2})$/
-        let [_, day, month, year] = dateFormat.exec(birthDigits)
-        this.birthDate = new Date(parseInt(year),
-                                  parseInt(month) -1,
-                                  parseInt(day))
-    }
+function dateFromSixIntDigits(sixIntDigits) {
+    const dateFormat = /^(\d{2})(\d{2})(\d{2})$/
+    let [_, day, month, year] = dateFormat.exec(this.birthDigits)
+    return new Date(parseInt(year), parseInt(month) -1, parseInt(day))
 }
 
 module.exports.NicaraguanId = NicaraguanId
