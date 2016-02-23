@@ -43,4 +43,4 @@ function dateFromSixIntDigits(sixIntDigits) {
     return new Date(parseInt(year), parseInt(month) -1, parseInt(day))
 }
 
-module.exports.NicaraguanId = NicaraguanId
+export default NicaraguanId
