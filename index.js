@@ -19,12 +19,6 @@ class NicaraguanId {
         this.setNewNumber(number)
     }
 
-    checkNumber(number) {
-        if (!validIdNumberRegExp.test(number)) {
-            throw `${number} is an invalid nicaraguan ID number.`
-        }
-    }
-
     setNewNumber(number) {
         this.checkNumber(number)
 
@@ -34,6 +28,12 @@ class NicaraguanId {
         this.birthDigits = birthDigits
         this.consecutive = consecutive
         this.birthDate = dateFromSixIntDigits(this.birthDigits)
+    }
+
+    checkNumber(number) {
+        if (!validIdNumberRegExp.test(number)) {
+            throw `${number} is an invalid nicaraguan ID number.`
+        }
     }
 }
 
