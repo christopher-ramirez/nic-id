@@ -39,8 +39,8 @@ class NicaraguanId {
 
 function dateFromSixIntDigits(sixIntDigits) {
     const dateFormat = /^(\d{2})(\d{2})(\d{2})$/
-    let [_, day, month, year] = dateFormat.exec(this.birthDigits)
+    let [_, day, month, year] = dateFormat.exec(sixIntDigits)
     return new Date(parseInt(year), parseInt(month) -1, parseInt(day))
 }
 
-module.exports.NicaraguanId = NicaraguanId
+export default NicaraguanId
